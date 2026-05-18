@@ -21,7 +21,7 @@ input[type="tel"] {
 }
 
 input:invalid {
-	border-color: green;
+	border-color: red;
 }
 
 div {
