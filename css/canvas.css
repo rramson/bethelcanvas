@@ -24,6 +24,10 @@ input:invalid {
 	border-color: red;
 }
 
+input:focus:invalid {
+	border-color: black;
+}
+
 div {
  border-radius: 5px;
  background-color: #f2f2f2;
