@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <title>Bethel AMEC Membership Form</title>
-    <!-- Updated May 15, 2026 9:58 -->
+    <title>Bethel AMEC Membership Canvas Form</title>
+    <!-- Updated September 14, 2026 11:59 -->
 </head>
 
 <body class="bg-light">
@@ -41,10 +41,17 @@
                         <i>* denotes required information</i>
                     </div> -->
                    
+                    <!-- Membership # section-->
+                    <div id="rcorners2" class="form-check col-sm">
+                        <label for="MemberNumber" class="col-form-label fs-4 fw-bold">Membership Number, if known</label><br />
+                        <input type="text" class="form-control" id="MemberNumber" name="MemberNumber" value="" minlength="1" maxlength="6" size="6" /><br />
+                    </div>
+
                     <!-- Choose Which Service You Attend -->
                     <div id="rcorners2" class="row mb-3">
                         <label for="AttendService" class="col-form-label fs-4 fw-bold">Which Service Do You Attend?*</label>
-                        <div id="rcorners2" class="form-check col-sm">
+                        <div id="rcorners2" class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa-solid fa-cross"></i></span>
                             <select class="form-select" id="AttendService" name="Attend&nbsp;Service" required>
                                 <option value="" disabled selected>Service Time</option>
                                 <option value="7:00&nbsp;AM">7:00 AM</option>
@@ -57,7 +64,8 @@
                     <!-- Membership Status -->
                     <div id="rcorners2" class="row mb-3">
                         <label for="BethelStatus" class="col-form-label fs-4 fw-bold">Church Status?*</label>
-                        <div id="rcorners2" class="form-check col-sm">
+                        <div id="rcorners2" class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa-solid fa-cross"></i></span>
                             <select class="form-select" id="BethelStatus" name="Christian&nbsp;Status" required">
                                 <option value="NewConvert" disabled selected>Church Status</option>
                                 <option value="BethelMember">Bethel AMEC Member</option>
@@ -67,17 +75,12 @@
                             <div class="invalid-feedback">Please select a valid Church status.</div>
                         </div>
                     </div>
-
-                    <!-- Membership # section-->
-                    <div id="rcorners2" class="form-check col-sm">
-                        <label for="MemberNumber" class="col-form-label fs-4 fw-bold">Membership Number, if known</label><br />
-                        <input type="text" class="form-control" id="MemberNumber" name="MemberNumber" value="" minlength="1" maxlength="6" size="6" /><br />
-                    </div>
-
+                    
                     <!-- Baptismal Question -->
                     <div id="rcorners2" class="row mb-3">
                         <label for="baptized" class="col-form-label fs-4 fw-bold">Have you been baptized?*</label>
-                        <div id="rcorners2" class="form-check col-sm">
+                        <div id="rcorners2" class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa-solid fa-cross"></i></span>
                             <select class="form-select" id="baptized" name="Baptized" required>
                                 <option value="" disabled selected>Baptismal status</option>
                                 <option value="Yes">Baptized</option>
@@ -94,7 +97,8 @@
 
                         <label for="MTitle" class="col-form-label fs-4 fw-bold">Personal Information:</label>
                        
-                        <div id="rcorners2" class="form-check col-12 mb-3">
+                        <div id="rcorners2" class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa fa-user"></i></span>
                             <select class="form-select" id="MTitle" name="Title" required>
                                 <option value="" disabled selected>Select your title: *</option>
                                 <option value="Mr.">Mr.</option>
@@ -252,6 +256,7 @@
                             Can we publish your number in the Church's phone directory?
                         </label>
                         <div id="rcorners2" class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-user-check"></i></span>
                             <select class="form-select" id="NumPublish">
                                 <option value="" disabled selected>Consent to publish phone number</option>
                                 <option value="Yes">Yes</option>
@@ -264,6 +269,7 @@
                             Would you like to receive text messages regarding church activities?
                         </label>
                         <div id="rcorners2" class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-user-check"></i></span>
                             <select class="form-select" id="ReceiveText">
                                 <option value="" disabled selected>Consent to receive text messages</option>
                                 <option value="Yes">Yes</option>
@@ -286,6 +292,7 @@
                             Would you like to receive emails pertaining to church activities?
                         </label>
                         <div id="rcorners2" class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-user-check"></i></span>
                             <select class="form-select" id="ReceiveEmail" name="ReceiveEmail">
                                 <option value="" disabled selected>Consent to receive emails</option>
                                 <option value="Yes">Yes</option>
